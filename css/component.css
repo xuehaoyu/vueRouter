@@ -1,0 +1,100 @@
+body,html,ul,li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.index{
+    position: relative;
+}
+.Nav{
+    width: 100%;
+    height: 40px;
+    background: #cccccc;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    z-index: 99;
+}
+.navLis{
+    font-size: 16px;
+    font-weight: 700;
+}
+.active{
+    color: #ac2925;
+}
+.indexCon{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    left: 0;
+    top:0;
+}
+.indexCon img{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top:0;
+    bottom:0;
+    margin: auto;
+}
+.v-enter{
+    transform: translate(100%,0);
+}
+.v-leave-to{
+    transform: translate(-100%,0);
+}
+.v-leave-active,.v-enter-active{
+    transition: all 0.5s;
+}
+.opacity-enter{
+    opacity: 0;
+}
+.opacity-leave-to{
+    opacity: 0;
+}
+.opacity-leave-active,.v-enter-active{
+    transition: all 0.5s;
+}
+.left{
+    width: 25%;
+    border-right: 1px solid #cccccc;
+    height: 100%;
+    float: left;
+    box-sizing: border-box;
+    overflow: scroll;
+    padding: 20px 20px;
+}
+.right{
+    width: 75%;
+    height: 100%;
+    float: left;
+    box-sizing: border-box;
+    overflow: scroll;
+}
+.floor{
+    height: 300px;
+}
+.floor>h1{
+    text-align: center;
+}
+.floor>p{
+    padding: 20px 40px;
+}
+.loginName{
+    position: relative;
+}
+.loginout{
+    position: absolute;
+    right: -100%;
+    top:-4px;
+    font-size: 14px;
+    padding: 4px 6px;
+    background: #007aff;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+}
